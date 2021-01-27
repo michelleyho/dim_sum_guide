@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1> All about Dim Sum! </h1>
+    {% for k, v in dim_sum_dish.items() %}
+        <p><a href='/dimsum/{{k}}'> {{ v }} </a></p> 
+    {% endfor %}
+
+{% endblock %}
